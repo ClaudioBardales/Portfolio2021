@@ -1,13 +1,13 @@
 import React from "react"
 import Styled from "styled-components"
 import Burger from "./Burger"
+import Logo from "./Logo"
+
 const Navbar = () => {
   return (
     <StyledNav>
       <Container>
-        <div>
-          <h1>[CLAUDIO]</h1>
-        </div>
+        <Logo />
         <Burger />
       </Container>
     </StyledNav>
@@ -27,7 +27,7 @@ const Container = Styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
-  justify-content: space-between;
+justify-content: space-between;
 width: 90%;
 margin: auto;
 `
