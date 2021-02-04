@@ -1,13 +1,14 @@
 import React from "react"
-import styled from "styled-components"
 import GlobalStyle from "../GlobalStyles"
 import Navbar from "../components/Nav/Navbar"
+import Hero from "../components/Hero/Hero"
 
 export default function Home() {
   return (
     <>
       <GlobalStyle />
       <Navbar />
+      <Hero />
     </>
   )
 }

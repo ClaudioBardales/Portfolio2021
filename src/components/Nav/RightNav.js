@@ -13,25 +13,27 @@ const RightNav = ({ open }) => {
 
 const StyledUL = Styled.ul`
     display: flex;
+    list-style: none;
     flex-flow:row nowrap;
     li{
         color: white;
         padding: 18px 10px;
-        list-style: none;
+        
     }
 
     @media (max-width: 768px){
-        transform: ${({ open }) =>
-          open ? "translateX(0)" : "translateX(100%)"}
-        flex-direction: column nowrap;
-        background-color: #000;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 300px;
-        padding-top: 3.5rem;
-        transition: transform 0.3s ease-in-out;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: column;
+    background-color: #000;
+    position: fixed;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
         li{
             color: white;
         }

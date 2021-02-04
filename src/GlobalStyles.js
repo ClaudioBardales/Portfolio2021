@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
             color: white;
         }
         p, li{
-            font-family: 'LettrGoth12', sans-serif;
-            font-size: 16px;
+            font-size: 17px;
+            font-family: 'Roboto Mono', monospace;
         }
     }
 `
