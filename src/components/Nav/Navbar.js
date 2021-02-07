@@ -15,11 +15,13 @@ const Navbar = () => {
 }
 
 const StyledNav = Styled.nav`
+  position: fixed;
+  width: 100%;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 7vh;
+  min-height: 10vh;
   padding: 5px;
    }
 `

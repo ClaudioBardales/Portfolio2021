@@ -4,9 +4,9 @@ import Styled from "styled-components"
 const RightNav = ({ open }) => {
   return (
     <StyledUL open={open}>
-      <li>About</li>
-      <li>Project</li>
-      <li>Contact Us</li>
+      <li>ABOUT</li>
+      <li>PROJECTS</li>
+      <li>CONTACT US</li>
     </StyledUL>
   )
 }
@@ -18,6 +18,7 @@ const StyledUL = Styled.ul`
     li{
         color: white;
         padding: 18px 10px;
+        cursor: pointer;
         
     }
 

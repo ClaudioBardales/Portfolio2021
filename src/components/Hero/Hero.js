@@ -6,19 +6,31 @@ import React from "react"
 const Hero = () => {
   return (
     <StyledContainer>
+      <h1>Claudio Bardales</h1>
+      <p>Web Developer</p>
       <Button />
-      <Img src={hero} alt="" />
     </StyledContainer>
   )
 }
 
-const Img = Styled.img`
-width: 100%;
-height: 100%;
-`
-
 const StyledContainer = Styled.div`
-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-image:url(${hero});
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+h1{
+  font-size: 3.5rem;
+}
+p{
+font-size: 2rem;
+margin: 2rem;
+color: #fff;
+}
 `
 
 export default Hero
