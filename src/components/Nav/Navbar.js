@@ -15,6 +15,7 @@ const Navbar = () => {
 }
 
 const StyledNav = Styled.nav`
+  z-index: 20;
   position: fixed;
   width: 100%;
   background-color: #000;
@@ -22,7 +23,6 @@ const StyledNav = Styled.nav`
   align-items: center;
   justify-content: space-between;
   min-height: 10vh;
-  padding: 5px;
    }
 `
 const Container = Styled.div`

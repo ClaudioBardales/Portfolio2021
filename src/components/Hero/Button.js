@@ -10,6 +10,7 @@ const Button = () => {
 }
 
 const StyledButton = Styled.button`
+z-index: 10;
 color: #000;
 background-color: white;
 border-radius: 50px;
