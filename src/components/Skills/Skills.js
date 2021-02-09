@@ -12,7 +12,6 @@ import Styled from "styled-components"
 const Skills = () => {
   return (
     <StyledSection>
-      <h1>My Skills!</h1>
       <FaHtml5 />
       <FaCss3Alt />
       <FaJsSquare />
