@@ -22,7 +22,7 @@ const StyledNav = Styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 10vh;
+  min-height: 9vh;
    }
 `
 const Container = Styled.div`

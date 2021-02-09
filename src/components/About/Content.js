@@ -17,12 +17,20 @@ const Content = () => {
 
 const StyledContainer = Styled.div`
 display: flex;
+justify-content: center;
+width: 90%;
 h1{
     color: black;
 }
 img{
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
+}
+p{
+  margin-left: 20px;
+  width: 30%;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 `
 

@@ -17,11 +17,9 @@ const StyledContainer = Styled.div`
     justify-content: center;
     align-items: center;
     h1{
+        margin: 3rem;
         color: #000;
-        margin: 2rem;
-        border: 1px red solid;
         padding: 20px;
-
     }
 `
 export default About
