@@ -3,8 +3,8 @@ import projectImg2 from "../../img/Project2.jpg"
 import { faGithub } from "react-icons/fa"
 import { SiNetlify } from "react-icons/si"
 
-export default ProjectCardContent[
-  ({
+export default ProjectCardContent = [
+  {
     projectImg: projectImg1,
     projectTitle: "Seladrab Cleaning Services",
     tech1: "HTML",
@@ -23,5 +23,5 @@ export default ProjectCardContent[
     description: "An Ecommerce Clone of a Pet Supplies Website.",
     icon1: faGithub,
     icon2: SiNetlify,
-  })
+  },
 ]
