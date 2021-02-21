@@ -9,7 +9,6 @@ const Project = () => {
       <div>
         <Card />
         <Card />
-        <Card />
       </div>
     </StyledContainer>
   )
