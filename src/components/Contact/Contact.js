@@ -1,10 +1,12 @@
 import React from "react"
 import Styled from "styled-components"
+import ContactForm from "../Contact/ContactForm"
 
 const Contact = () => {
   return (
     <StyledContainter>
       <h1>CONTACT ME</h1>
+      <ContactForm />
     </StyledContainter>
   )
 }
