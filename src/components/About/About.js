@@ -4,22 +4,23 @@ import Content from "./Content"
 const About = () => {
   return (
     <StyledContainer>
-      <h1>ABOUT</h1>
+      <h1>ABOUT ME</h1>
       <Content />
     </StyledContainer>
   )
 }
 
 const StyledContainer = Styled.div`
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     h1{
-        margin: 3rem;
-        color: #000;
-        padding: 20px;
+      margin: auto;
+      width: 50%;
+      padding: 3rem;
+      text-align: center;
+      color: #000;
     }
 `
 export default About

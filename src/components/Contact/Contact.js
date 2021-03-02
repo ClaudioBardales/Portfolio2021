@@ -21,8 +21,6 @@ h1{
     text-align: center;
     margin: auto;
 }
-
-
 `
 
 export default Contact

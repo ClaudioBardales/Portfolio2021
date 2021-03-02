@@ -7,8 +7,8 @@ const Content = () => {
     <StyledContainer>
       <img src={me} alt="img" />
       <p>
-        I am a Front-End Developer residing in Hayward, CA. I love learning
-        about new technology and improving everyday on the skills that I already
+        I am a Front-End Developer based in Hayward, CA. I love learning about
+        new technologies and improving everyday on the skills that I already
         know. On my free time I like hike, cook, and play my Nintendo switch!
       </p>
     </StyledContainer>
@@ -17,20 +17,38 @@ const Content = () => {
 
 const StyledContainer = Styled.div`
 display: flex;
+align-items: center;
 justify-content: center;
-width: 90%;
+flex-direction: column;
+width: 80%;
 h1{
     color: black;
 }
 img{
     width: 40%;
-    height: 40%;
+    margin: 3rem;
 }
 p{
-  margin-left: 20px;
-  width: 30%;
-  font-size: 2rem;
+  margin: 1.5rem;
+  width: 70%;
+  font-size: 1.5rem;
   line-height: 1.5;
+}
+@media (max-width: 768px){
+  img{
+    width: 80%;
+  }
+  p{
+    width: 90%;
+  }
+}
+@media(max-width: 500px){
+  img{
+    width: 90%;
+  }
+  p{
+    width: 90%;
+  }
 }
 `
 
