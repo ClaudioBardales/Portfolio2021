@@ -41,6 +41,8 @@ display: -webkit-box;
 
 input[type='submit'] {
   background-color: #201F1F;
+  width: 30%;
+  margin: 0 auto;
   color: white;
   font-weight: bold;
 }

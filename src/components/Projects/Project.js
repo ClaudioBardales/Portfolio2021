@@ -1,15 +1,28 @@
 import React from "react"
 import Styled from "styled-components"
 import Card from "./Card"
+import ProjectCardContent from "./CardContent"
 
 const Project = () => {
+  const projects = ProjectCardContent.map((project, index) => {
+    return (
+      <Card
+        imgSrc={project.projectImg}
+        key={index}
+        title={project.projectTitle}
+        tech1={project.tech1}
+        tech2={project.tech2}
+        tech3={project.tech3}
+        description={project.description}
+        icon1={project.icon1}
+        icon2={project.icon2}
+      />
+    )
+  })
   return (
     <StyledContainer>
       <h1>PROJECTS</h1>
-      <div>
-        <Card />
-        <Card />
-      </div>
+      <div>{projects}</div>
     </StyledContainer>
   )
 }
@@ -22,6 +35,7 @@ h1{
     padding: 3rem;
     text-align: center;
     margin: auto;
+    background-color: teal;
 }
 `
 
