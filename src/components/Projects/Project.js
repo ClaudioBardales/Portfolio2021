@@ -14,8 +14,6 @@ const Project = () => {
         tech2={project.tech2}
         tech3={project.tech3}
         description={project.description}
-        icon1={project.icon1}
-        icon2={project.icon2}
       />
     )
   })

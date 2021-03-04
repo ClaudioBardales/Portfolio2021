@@ -1,16 +1,10 @@
 import React from "react"
 import Styled from "styled-components"
+import { FaGithub } from "react-icons/fa"
+import { SiNetlify } from "react-icons/si"
+import { IconContext } from "react-icons/lib"
 
-const Card = ({
-  imgSrc,
-  title,
-  tech1,
-  tech2,
-  tech3,
-  description,
-  icon1,
-  icon2,
-}) => {
+const Card = ({ imgSrc, title, tech1, tech2, tech3, description }) => {
   return (
     <StyledCard>
       <img src={imgSrc} alt="img" />
@@ -19,8 +13,12 @@ const Card = ({
         {tech1}-{tech2}-{tech3}
       </h3>
       <p>{description}</p>
-      <i>{icon1}</i>
-      <i>{icon2}</i>
+      <IconContext.Provider>
+        <StyledIconContainer>
+          <FaGithub />
+          <SiNetlify />
+        </StyledIconContainer>
+      </IconContext.Provider>
     </StyledCard>
   )
 }
@@ -49,7 +47,13 @@ p{
   border: 1px solid blue;
   text-align: center;
 }
+`
 
+const StyledIconContainer = Styled.div`
+border: 1px solid black;
+width: 100%;
+text-align: center;
+padding: 1rem;
 
 `
 
