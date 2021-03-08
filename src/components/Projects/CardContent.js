@@ -8,6 +8,8 @@ const ProjectCardContent = [
     tech1: "HTML",
     tech2: "CSS",
     tech3: "JS",
+    projectLink: "https://brave-austin-bf978e.netlify.app",
+    githubLink: "https://github.com/ClaudioBardales/SeladrabCleaningServices",
     description:
       "A cleaning website for a small business. I wanted to use the core technologies so I can get more practice on the fundementals.",
   },
@@ -17,6 +19,8 @@ const ProjectCardContent = [
     tech1: "HTML",
     tech2: "CSS",
     tech3: "JS",
+    projectLink: "https://pensive-panini-fa570d.netlify.app",
+    githubLink: "https://github.com/ClaudioBardales/CodingChallenge",
     description:
       "An Ecommerce Clone of a Pet Supplies Website. This One was my favorite because it challenged me to get better and show that I can make a good clone of any ecommerce website. ",
   },

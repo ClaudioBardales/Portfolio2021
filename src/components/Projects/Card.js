@@ -2,9 +2,18 @@ import React from "react"
 import Styled from "styled-components"
 import { FaGithub } from "react-icons/fa"
 import { SiNetlify } from "react-icons/si"
-import { IconContext } from "react-icons/lib"
+import { IconContext } from "react-icons"
 
-const Card = ({ imgSrc, title, tech1, tech2, tech3, description }) => {
+const Card = ({
+  imgSrc,
+  title,
+  tech1,
+  tech2,
+  tech3,
+  description,
+  projectLink,
+  githubLink,
+}) => {
   return (
     <StyledCard>
       <img src={imgSrc} alt="img" />
@@ -13,18 +22,21 @@ const Card = ({ imgSrc, title, tech1, tech2, tech3, description }) => {
         {tech1}-{tech2}-{tech3}
       </h3>
       <p>{description}</p>
-      <IconContext.Provider>
-        <StyledIconContainer>
-          <FaGithub />
-          <SiNetlify />
-        </StyledIconContainer>
-      </IconContext.Provider>
+      <StyledIconContainer>
+        <IconContext.Provider value={{ style: { fontSize: "2rem" } }}>
+          <a href={githubLink}>
+            <FaGithub />
+          </a>
+          <a href={projectLink}>
+            <SiNetlify />
+          </a>
+        </IconContext.Provider>
+      </StyledIconContainer>
     </StyledCard>
   )
 }
 
 const StyledCard = Styled.div`
-border: 1px solid red;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -44,7 +56,6 @@ h3{
   text-align: center;
 }
 p{
-  border: 1px solid blue;
   text-align: center;
 }
 `

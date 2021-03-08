@@ -13,6 +13,8 @@ const Project = () => {
         tech1={project.tech1}
         tech2={project.tech2}
         tech3={project.tech3}
+        projectLink={project.projectLink}
+        githubLink={project.githubLink}
         description={project.description}
       />
     )
@@ -33,8 +35,18 @@ h1{
     padding: 3rem;
     text-align: center;
     margin: auto;
-    background-color: teal;
 }
+div{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ border: 1px solid red;
+ @media (max-width: 768px){
+   flex-direction: column;
+   width: 70%;
+ }
+
+
 `
 
 export default Project
