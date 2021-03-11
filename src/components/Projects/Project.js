@@ -40,13 +40,11 @@ div{
  display: flex;
  justify-content: space-around;
  align-items: center;
- border: 1px solid red;
  @media (max-width: 768px){
    flex-direction: column;
-   width: 70%;
+   width: 80%;
+   margin: auto;
  }
-
-
 `
 
 export default Project

@@ -23,7 +23,17 @@ const Card = ({
       </h3>
       <p>{description}</p>
       <StyledIconContainer>
-        <IconContext.Provider value={{ style: { fontSize: "2rem" } }}>
+        <IconContext.Provider
+          value={{
+            style: {
+              fontSize: "2rem",
+              color: "black",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            },
+          }}
+        >
           <a href={githubLink}>
             <FaGithub />
           </a>
@@ -41,6 +51,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 4px;
 width: 30%;
 img{
   width: 100%;
@@ -61,11 +73,13 @@ p{
 `
 
 const StyledIconContainer = Styled.div`
-border: 1px solid black;
 width: 100%;
 text-align: center;
 padding: 1rem;
-
+@media (max-width: 768px){
+  display: flex;
+  flex-direction: row;
+}
 `
 
 export default Card
