@@ -51,9 +51,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width: 80%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 4px;
-width: 30%;
+border: 1px solid red;
 img{
   width: 100%;
 }

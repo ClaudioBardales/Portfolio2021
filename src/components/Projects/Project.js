@@ -22,7 +22,7 @@ const Project = () => {
   return (
     <StyledContainer>
       <h1>PROJECTS</h1>
-      <div>{projects}</div>
+      <Container>{projects}</Container>
     </StyledContainer>
   )
 }
@@ -37,14 +37,20 @@ h1{
     margin: auto;
 }
 div{
- display: flex;
- justify-content: space-around;
- align-items: center;
  @media (max-width: 768px){
-   flex-direction: column;
-   width: 80%;
    margin: auto;
  }
 `
 
+const Container = Styled.div`
+display:grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 1.5rem;
+padding: 15px;
+justify-items: center;
+align-items: center;
+@media (max-width: 768px){
+  grid-template-columns: 1fr;
+}
+`
 export default Project
