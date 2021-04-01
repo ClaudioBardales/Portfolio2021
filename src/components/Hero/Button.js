@@ -1,10 +1,21 @@
 import React from "react"
 import Styled from "styled-components"
+import { Link } from "react-scroll"
 
 const Button = () => {
   return (
     <>
-      <StyledButton>See My Projects!</StyledButton>
+      <StyledButton>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
+          See My Projects!
+        </Link>
+      </StyledButton>
     </>
   )
 }

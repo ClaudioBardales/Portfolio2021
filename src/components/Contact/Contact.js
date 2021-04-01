@@ -4,7 +4,7 @@ import ContactForm from "../Contact/ContactForm"
 
 const Contact = () => {
   return (
-    <StyledContainter>
+    <StyledContainter id="contact">
       <h1>CONTACT ME</h1>
       <ContactForm />
     </StyledContainter>

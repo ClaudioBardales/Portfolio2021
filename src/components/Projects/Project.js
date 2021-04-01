@@ -20,7 +20,7 @@ const Project = () => {
     )
   })
   return (
-    <StyledContainer>
+    <StyledContainer id="projects">
       <h1>PROJECTS</h1>
       <Container>{projects}</Container>
     </StyledContainer>
@@ -53,4 +53,5 @@ align-items: center;
   grid-template-columns: 1fr;
 }
 `
+
 export default Project

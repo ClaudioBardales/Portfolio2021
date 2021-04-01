@@ -26,11 +26,8 @@ const Card = ({
         <IconContext.Provider
           value={{
             style: {
-              fontSize: "2rem",
+              fontSize: "3rem",
               color: "black",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
             },
           }}
         >
@@ -51,10 +48,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 80%;
+width: 70%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 4px;
-border: 1px solid red;
 img{
   width: 100%;
 }
@@ -75,8 +71,10 @@ p{
 
 const StyledIconContainer = Styled.div`
 width: 100%;
-text-align: center;
-padding: 1rem;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+padding: 2rem;
 @media (max-width: 768px){
   display: flex;
   flex-direction: row;

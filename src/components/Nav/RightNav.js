@@ -1,12 +1,37 @@
 import React from "react"
 import Styled from "styled-components"
+import { Link } from "react-scroll"
 
 const RightNav = ({ open }) => {
   return (
     <StyledUL open={open}>
-      <li>ABOUT</li>
-      <li>PROJECTS</li>
-      <li>CONTACT US</li>
+      <Link
+        activeClass="active"
+        to="about"
+        spy={true}
+        smooth={true}
+        duration={1000}
+      >
+        <li>ABOUT</li>
+      </Link>
+      <Link
+        activeClass="active"
+        to="projects"
+        spy={true}
+        smooth={true}
+        duration={1000}
+      >
+        <li>PROJECTS</li>
+      </Link>
+      <Link
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={1000}
+      >
+        <li>CONTACT</li>
+      </Link>
     </StyledUL>
   )
 }
@@ -15,6 +40,9 @@ const StyledUL = Styled.ul`
     display: flex;
     list-style: none;
     flex-flow:row nowrap;
+    a{
+      text-decoration: none;
+    }
     li{
         color: white;
         padding: 18px 10px;
