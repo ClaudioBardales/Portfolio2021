@@ -32,7 +32,7 @@ min-height: 100vh;
 h1{
     color: #000;
     width: 50%;
-    padding: 3rem;
+    padding: 1.5rem;
     text-align: center;
     margin: auto;
 }

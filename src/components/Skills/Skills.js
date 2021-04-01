@@ -32,7 +32,7 @@ color: #fff;
 h1{
   margin: auto;
   width: 50%;
-  padding: 3rem;
+  padding: 1.5rem;
   text-align: center;
 }
 `

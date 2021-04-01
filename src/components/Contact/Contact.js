@@ -17,7 +17,7 @@ background-color: #000;
 h1{
     color: #fff;
     width: 50%;
-    padding: 3rem;
+    padding: 1.5rem;
     text-align: center;
     margin: auto;
 }
