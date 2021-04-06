@@ -4,10 +4,7 @@ import Styled from "styled-components"
 const ContactForm = () => {
   return (
     <div>
-      <StyledForm
-        method="POST"
-        action="https://formspree.io/claudioeduardobardales@gmail.com"
-      >
+      <StyledForm method="POST" action="https://formspree.io/f/mdoyogrg">
         <input type="name" placeholder="Name" required />
         <input type="email" placeholder="Email" required />
         <textarea
