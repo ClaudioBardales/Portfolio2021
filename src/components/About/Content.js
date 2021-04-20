@@ -1,6 +1,8 @@
 import React from "react"
 import Styled from "styled-components"
+import { Link } from "react-router-dom"
 import me from "../../img/aboutimg.jpg"
+import resume from "../../img/Resume.pdf"
 
 const Content = () => {
   return (
@@ -10,6 +12,12 @@ const Content = () => {
         I am a Front-End Developer based in Hayward, CA. I love learning about
         new technologies and improving everyday on the skills that I already
         know. On my free time I like hike, cook, and play my Nintendo switch!
+      </p>
+      <p>
+        You can download my resume{" "}
+        <Link to={resume} target="_blank" download>
+          Here.
+        </Link>
       </p>
     </StyledContainer>
   )
