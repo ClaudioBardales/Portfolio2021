@@ -1,5 +1,4 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
 import GlobalStyle from "../GlobalStyles"
 import Navbar from "../components/Nav/Navbar"
 import Hero from "../components/Hero/Hero"
@@ -12,16 +11,14 @@ import Footer from "../components/Footer/Footer"
 export default function Home() {
   return (
     <>
-      <BrowserRouter>
-        <GlobalStyle />
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Project />
-        <Contact />
-        <Footer />
-      </BrowserRouter>
+      <GlobalStyle />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
+      <Footer />
     </>
   )
 }
