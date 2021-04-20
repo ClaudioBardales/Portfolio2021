@@ -14,7 +14,7 @@ const Content = () => {
         know. On my free time I like hike, cook, and play my Nintendo switch!
       </p>
       <p>
-        You can download my resume{" "}
+        You can download my resume
         <Link to={resume} target="_blank" download>
           Here.
         </Link>
