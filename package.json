@@ -14,12 +14,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.32.11",
+    "gatsby": "^3.3.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^4.2.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
     "react-scroll": "^1.8.2",
     "styled-components": "^5.2.3"
   },

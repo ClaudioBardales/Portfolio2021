@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
 import GlobalStyle from "../GlobalStyles"
 import Navbar from "../components/Nav/Navbar"
 import Hero from "../components/Hero/Hero"
@@ -12,7 +12,7 @@ import Footer from "../components/Footer/Footer"
 export default function Home() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <GlobalStyle />
         <Navbar />
         <Hero />
@@ -21,7 +21,7 @@ export default function Home() {
         <Project />
         <Contact />
         <Footer />
-      </Router>
+      </BrowserRouter>
     </>
   )
 }

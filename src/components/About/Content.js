@@ -1,6 +1,5 @@
 import React from "react"
 import Styled from "styled-components"
-import { Link } from "react-router-dom"
 import me from "../../img/aboutimg.jpg"
 import resume from "../../img/Resume.pdf"
 
@@ -15,9 +14,10 @@ const Content = () => {
       </p>
       <p>
         You can download my resume
-        <Link to={resume} target="_blank" download>
+        <a href={resume} download>
+          {" "}
           Here.
-        </Link>
+        </a>
       </p>
     </StyledContainer>
   )
