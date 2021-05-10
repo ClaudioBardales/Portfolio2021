@@ -21,7 +21,7 @@ const Project = () => {
   })
   return (
     <StyledContainer id="projects">
-      <h1>PROJECTS</h1>
+      <h1 className="title">Projects</h1>
       <Container>{projects}</Container>
     </StyledContainer>
   )
@@ -36,6 +36,9 @@ h1{
     text-align: center;
     margin: auto;
 }
+.title{
+  letter-spacing: 2px;
+}
 div{
  @media (max-width: 768px){
    margin: auto;
@@ -44,7 +47,7 @@ div{
 
 const Container = Styled.div`
 display:grid;
-grid-template-columns: repeat(2,1fr);
+grid-template-columns: 1fr;
 grid-gap: 1.5rem;
 padding: 15px;
 justify-items: center;

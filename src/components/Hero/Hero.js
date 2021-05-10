@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <StyledContainer>
       <h1>Claudio Bardales</h1>
-      <p>Web Developer</p>
+      <p>&#60;Web Developer &#47;&#62;</p>
       <Button />
     </StyledContainer>
   )
@@ -34,12 +34,14 @@ min-height: 100vh;
 }
 
 h1{
+  letter-spacing: 3px;
   font-size: 3.5rem;
+  text-align: center;
   z-index: 10;
 }
 p{
 z-index: 10;
-font-size: 2rem;
+font-size: 1.70rem;
 margin: 2rem;
 color: #fff;
 }
