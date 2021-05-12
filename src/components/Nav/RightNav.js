@@ -1,6 +1,7 @@
 import React from "react"
 import Styled from "styled-components"
 import { Link } from "react-scroll"
+import resume from "../../img/Resume.pdf"
 
 const RightNav = ({ open }) => {
   return (
@@ -32,12 +33,18 @@ const RightNav = ({ open }) => {
       >
         <li>CONTACT</li>
       </Link>
+      <li>
+        <StyledButton href={resume} download>
+          RESUME
+        </StyledButton>
+      </li>
     </StyledUL>
   )
 }
 
 const StyledUL = Styled.ul`
     display: flex;
+    align-items: center;
     list-style: none;
     flex-flow:row nowrap;
     a{
@@ -47,7 +54,6 @@ const StyledUL = Styled.ul`
         color: white;
         padding: 18px 10px;
         cursor: pointer;
-        
     }
 
     @media (max-width: 768px){
@@ -69,5 +75,20 @@ const StyledUL = Styled.ul`
     }
 
 `
+const StyledButton = Styled.a`
+          display: inline-block;
+          border: 0.1rem solid white;
+          padding:0.35em 1.2em;
+          background-color: #201F1F;
+          border-radius: 0.12em;
+          margin: 0 auto;
+          color: white;
+          text-align: center;
+          transition: all 0.3s;
+          &:hover {
+          color: black;
+          background-color: #fff;
+        }
+    `
 
 export default RightNav
