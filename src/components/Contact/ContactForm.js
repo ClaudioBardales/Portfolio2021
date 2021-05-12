@@ -42,7 +42,7 @@ display: -webkit-box;
 input[type='submit'] {
   display: inline-block;
   border: 0.1rem solid white;
-  background-color: #201F1F;
+  background-color: #000;
   border-radius: 0.12em;
   width: 40%;
   margin: 0 auto;

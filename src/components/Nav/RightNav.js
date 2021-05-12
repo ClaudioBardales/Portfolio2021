@@ -79,7 +79,7 @@ const StyledButton = Styled.a`
           display: inline-block;
           border: 0.1rem solid white;
           padding:0.35em 1.2em;
-          background-color: #201F1F;
+          background-color: #000;
           border-radius: 0.12em;
           margin: 0 auto;
           color: white;
