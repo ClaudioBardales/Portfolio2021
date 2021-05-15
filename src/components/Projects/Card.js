@@ -1,7 +1,7 @@
 import React from "react"
 import Styled from "styled-components"
 import { FaGithub } from "react-icons/fa"
-import { SiNetlify } from "react-icons/si"
+import { FiExternalLink } from "react-icons/fi"
 import { IconContext } from "react-icons"
 
 const Card = ({
@@ -35,7 +35,7 @@ const Card = ({
             <FaGithub />
           </a>
           <a href={projectLink}>
-            <SiNetlify />
+            <FiExternalLink />
           </a>
         </IconContext.Provider>
       </StyledIconContainer>
@@ -48,7 +48,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 50%;
+width: 55%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 4px;
 img{
