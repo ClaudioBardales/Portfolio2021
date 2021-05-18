@@ -36,10 +36,11 @@ const StyledIconContainer = Styled.div`
 z-index: 1;
 font-size: 2.5rem;
 margin: 1rem;
-width: 30%;
-display: flex;
+display: grid;
+justify-items: center;
 align-items: center;
-justify-content: space-evenly;
+grid-gap: 1.5rem;
+grid-template-columns: repeat(2, 1fr);
 `
 
 const StyledContainer = Styled.div`
