@@ -67,6 +67,10 @@ h3{
 p{
   text-align: center;
 }
+@media (max-width: 425px){
+  width: 80%;
+}
+
 `
 
 const StyledIconContainer = Styled.div`
