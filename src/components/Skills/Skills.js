@@ -26,7 +26,7 @@ const Skills = () => {
 }
 
 const StyledSection = Styled.div`
-min-height: 70vh;
+min-height: 50vh;
 background-color: #000;
 color: #fff;
 h1{
