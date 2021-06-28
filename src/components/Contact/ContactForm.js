@@ -40,11 +40,18 @@ display: -webkit-box;
 }
 
 input[type='submit'] {
-  background-color: #201F1F;
-  width: 30%;
+  display: inline-block;
+  border: 0.1rem solid white;
+  background-color: #000;
+  border-radius: 0.12em;
+  width: 40%;
   margin: 0 auto;
   color: white;
-  font-weight: bold;
+  transition: all 0.3s;
+  &:hover{
+    color: black;
+    background-color: #ffffff;
+  }
 }
 
 `

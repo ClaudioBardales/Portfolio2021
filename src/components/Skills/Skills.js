@@ -26,7 +26,7 @@ const Skills = () => {
 }
 
 const StyledSection = Styled.div`
-min-height: 60vh;
+min-height: 50vh;
 background-color: #000;
 color: #fff;
 h1{
@@ -41,7 +41,7 @@ const Container = Styled.div`
 display: grid;
 grid-template-columns: repeat(3,1fr);
 font-size: 5rem;
-grid-gap: 4rem;
+grid-gap: 6rem;
 width: 75%;
 margin: 0 auto;
 justify-content: space-evenly;
