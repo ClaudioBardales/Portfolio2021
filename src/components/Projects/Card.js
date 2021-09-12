@@ -32,10 +32,10 @@ const Card = ({
           }}
         >
           <a href={githubLink}>
-            <FaGithub />
+            <StyledGitHubIcon />
           </a>
           <a href={projectLink}>
-            <FiExternalLink />
+            <StyledLinkIcon />
           </a>
         </IconContext.Provider>
       </StyledIconContainer>
@@ -74,7 +74,7 @@ p{
 `
 
 const StyledIconContainer = Styled.div`
-width: 100%;
+width: 60%;
 margin: auto;
 display: flex;
 justify-content: space-evenly;
@@ -83,6 +83,21 @@ padding: 2rem;
   display: flex;
   flex-direction: row;
 }
+`
+const StyledGitHubIcon = Styled(FaGithub)`
+  transition: 0.3s;
+  &:hover {
+    transform: translate(0, -10px);
+  }
+
+`
+
+const StyledLinkIcon = Styled(FiExternalLink)`
+  transition: 0.3s;
+  &:hover {
+    transform: translate(0, -10px);
+  }
+
 `
 
 export default Card

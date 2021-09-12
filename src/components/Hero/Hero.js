@@ -19,10 +19,10 @@ const Hero = () => {
           }}
         >
           <a href="https://www.linkedin.com/in/claudiobardales/">
-            <FaLinkedin />
+            <StyledLinkedInIcon />
           </a>
           <a href="https://github.com/ClaudioBardales">
-            <FaGithub />
+            <StyledGitHubIcon />
           </a>
         </IconContext.Provider>
       </StyledIconContainer>
@@ -41,6 +41,22 @@ justify-items: center;
 align-items: center;
 grid-gap: 1.5rem;
 grid-template-columns: repeat(2, 1fr);
+`
+
+const StyledLinkedInIcon = Styled(FaLinkedin)`
+  transition: 0.3s;
+  &:hover {
+    transform: translate(0, -10px);
+  }
+
+`
+
+const StyledGitHubIcon = Styled(FaGithub)`
+  transition: 0.3s;
+  &:hover {
+    transform: translate(0, -10px);
+  }
+
 `
 
 const StyledContainer = Styled.div`
