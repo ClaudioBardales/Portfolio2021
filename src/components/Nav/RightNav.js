@@ -50,11 +50,17 @@ const StyledUL = Styled.ul`
     a{
       text-decoration: none;
     }
+    
     li{
         color: white;
         padding: 18px 10px;
         cursor: pointer;
     }
+    li:hover{
+      color: grey;
+      transition: all .4s ease;
+    }
+
 
     @media (max-width: 768px){
       align-items: center;
@@ -84,7 +90,7 @@ const StyledButton = Styled.a`
           margin: 0 auto;
           color: white;
           text-align: center;
-          transition: all 0.3s;
+          transition: all .4s ease;
           &:hover {
           color: black;
           background-color: #fff;

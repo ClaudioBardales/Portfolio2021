@@ -26,11 +26,12 @@ color: #000;
 background-color: white;
 border-radius: 50px;
 border: none;
-padding: 0.75rem;
+padding: 1rem;
 font-weight: Bold;
 font-size: 1rem;
+transition: all 0.5s ease;
 &:hover{
-  background-color: black:
+  background-color: black;
   color: white;
   cursor: pointer;
 }
