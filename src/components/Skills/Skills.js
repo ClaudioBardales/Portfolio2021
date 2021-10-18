@@ -93,13 +93,13 @@ const StyledCssIcon = Styled(FaCss3Alt)`
     transform: translate(0, -10px);
   }
 `
-const StyledJsIcon = Styled(FaGitAlt)`
+const StyledJsIcon = Styled(FaJsSquare)`
   transition: 0.3s;
   &:hover {
     transform: translate(0, -10px);
   }
 `
-const StyledGitIcon = Styled(FaJsSquare)`
+const StyledGitIcon = Styled(FaGitAlt)`
   transition: 0.3s;
   &:hover {
     transform: translate(0, -10px);
