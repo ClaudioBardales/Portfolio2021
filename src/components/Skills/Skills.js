@@ -14,12 +14,30 @@ const Skills = () => {
     <StyledSection>
       <h1>My Skills!</h1>
       <Container>
-        <StyledHTML5Icon />
-        <StyledCssIcon />
-        <StyledJsIcon />
-        <StyledGitIcon />
-        <StyledReactIcon />
-        <StyledComponentsIcon />
+        <div>
+          <StyledHTML5Icon />
+          <h3>HTML5</h3>
+        </div>
+        <div>
+          <StyledCssIcon />
+          <h3>CSS3</h3>
+        </div>
+        <div>
+          <StyledJsIcon />
+          <h3>Javascript</h3>
+        </div>
+        <div>
+          <StyledGitIcon />
+          <h3>Git</h3>
+        </div>
+        <div>
+          <StyledReactIcon />
+          <h3>ReactJS</h3>
+        </div>
+        <div>
+          <StyledComponentsIcon />
+          <h3>Styled Components</h3>
+        </div>
       </Container>
     </StyledSection>
   )
@@ -49,6 +67,14 @@ justify-content: space-evenly;
 justify-items: center;
 align-content: space-evenly;
 align-items: center;
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3{
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 768px){
   grid-template-columns: repeat(2,1fr);
   font-size: 4.30rem;
