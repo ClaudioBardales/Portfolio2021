@@ -48,6 +48,7 @@ input[type='submit'] {
   margin: 0 auto;
   color: white;
   transition: all 0.3s;
+  cursor: pointer;
   &:hover{
     color: black;
     background-color: #ffffff;

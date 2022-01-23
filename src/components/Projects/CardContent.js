@@ -8,7 +8,7 @@ const ProjectCardContent = [
     projectTitle: "Seladrab Cleaning Services",
     tech1: "HTML",
     tech2: "CSS",
-    tech3: "JS",
+    tech3: "JavaScript",
     projectLink: "https://brave-austin-bf978e.netlify.app",
     githubLink: "https://github.com/ClaudioBardales/SeladrabCleaningServices",
     description:
@@ -19,7 +19,7 @@ const ProjectCardContent = [
     projectTitle: "Entirely Pets Mini Clone",
     tech1: "HTML",
     tech2: "CSS",
-    tech3: "JS",
+    tech3: "JavaScript",
     projectLink: "https://pensive-panini-fa570d.netlify.app",
     githubLink: "https://github.com/ClaudioBardales/CodingChallenge",
     description:
@@ -34,7 +34,7 @@ const ProjectCardContent = [
     projectLink: "https://focused-montalcini-b667cd.netlify.app",
     githubLink: "https://github.com/ClaudioBardales/Giphy-Clone-React",
     description:
-      "A clone of Giphy. Used this proeject to showcase my abilities with an API, and learned how to use axios.",
+      "A clone of Giphy. Used this project to showcase my abilities with an API, and learned how to use axios.",
   },
 ]
 

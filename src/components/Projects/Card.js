@@ -15,58 +15,73 @@ const Card = ({
   githubLink,
 }) => {
   return (
-    <StyledCard>
-      <img src={imgSrc} alt="img" />
-      <h1>{title}</h1>
-      <h3>
-        {tech1}-{tech2}-{tech3}
-      </h3>
-      <p>{description}</p>
-      <StyledIconContainer>
-        <IconContext.Provider
-          value={{
-            style: {
-              fontSize: "3rem",
-              color: "black",
-            },
-          }}
-        >
-          <a href={githubLink}>
-            <StyledGitHubIcon />
-          </a>
-          <a href={projectLink}>
-            <StyledLinkIcon />
-          </a>
-        </IconContext.Provider>
-      </StyledIconContainer>
-    </StyledCard>
+    <Container>
+      <StyledCard>
+        <img src={imgSrc} alt="img" />
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <h3>
+          <div>{tech1}</div>
+          <div>{tech2}</div>
+          <div>{tech3}</div>
+        </h3>
+        <StyledIconContainer>
+          <IconContext.Provider
+            value={{
+              style: {
+                fontSize: "1.7rem",
+                color: "black",
+              },
+            }}
+          >
+            <a href={githubLink}>
+              <StyledGitHubIcon />
+            </a>
+            <a href={projectLink}>
+              <StyledLinkIcon />
+            </a>
+          </IconContext.Provider>
+        </StyledIconContainer>
+      </StyledCard>
+    </Container>
   )
 }
+
+const Container = Styled.div`
+max-width: 450px; 
+`
 
 const StyledCard = Styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 55%;
+width: 100%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 4px;
 img{
   width: 100%;
+  object-fit: cover;
 }
 h1{
-  font-size: 20px;
-  padding: 10px !important;
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 21px;
+  margin: 1rem;
 }
 h3{
-  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  width: 20.188rem;
+  gap: 0.625rem;
   color: #000;
   margin: 1rem;
-  text-align: center;
+  font-size: 1rem;
 }
+
 p{
-  text-align: center;
+  margin: 1rem;
 }
+
 @media (max-width: 425px){
   width: 80%;
 }
@@ -74,11 +89,10 @@ p{
 `
 
 const StyledIconContainer = Styled.div`
-width: 60%;
-margin: auto;
+width: 100%;
 display: flex;
-justify-content: space-evenly;
-padding: 2rem;
+gap: 1.2rem;
+padding: 1.2rem;
 @media (max-width: 768px){
   display: flex;
   flex-direction: row;

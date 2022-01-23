@@ -20,39 +20,41 @@ const Project = () => {
     )
   })
   return (
-    <StyledContainer id="projects">
-      <h1 className="title">Projects</h1>
-      <Container>{projects}</Container>
-    </StyledContainer>
+    <>
+      <Title className="title">Projects</Title>
+      <StyledContainer id="projects">
+        <Container>{projects}</Container>
+      </StyledContainer>
+    </>
   )
 }
 
-const StyledContainer = Styled.div`
-min-height: 100vh;
-h1{
+const Title = Styled.h1`
     color: #000;
-    width: 50%;
+    width: 100%;
     padding: 1.5rem;
     text-align: center;
-    margin: auto;
+    letter-spacing: 3px;
+`
+
+const StyledContainer = Styled.div`
+min-height: 70vh;
+h1{
+    color: #000;
+    width: 75%;
+    text-align: center;
 }
-.title{
-  letter-spacing: 2px;
-}
-div{
- @media (max-width: 768px){
-   margin: auto;
- }
 `
 
 const Container = Styled.div`
 display:grid;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 1.5rem;
 padding: 15px;
+width: 100%;
 justify-items: center;
 align-items: center;
-@media (max-width: 768px){
+@media (max-width: 1160px){
   grid-template-columns: 1fr;
 }
 `
