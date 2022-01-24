@@ -1,23 +1,53 @@
 import React from "react"
+import { useForm, ValidationError } from "@formspree/react"
 import Styled from "styled-components"
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("meqnobzl")
+  if (state.succeeded) {
+    return (
+      <StyledHeading>
+        <h3>Thank you for your Interest!</h3>
+        <h4>I will get back to you soon!</h4>
+      </StyledHeading>
+    )
+  }
   return (
     <div>
-      <StyledForm method="POST" action="https://formspree.io/f/mdoyogrg">
+      <StyledForm onSubmit={handleSubmit}>
         <input type="name" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
+        <input id="email" type="email" name="email" placeholder="Email" />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
         <textarea
+          id="message"
           name="message"
           cols="30"
           rows="10"
           placeholder="Enter Message Here"
-        ></textarea>
-        <input type="Submit" value="SUBMIT" />
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
       </StyledForm>
     </div>
   )
 }
+
+const StyledHeading = Styled.div`
+color: white;
+min-height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 2.7rem;
+gap: 40px;
+`
 
 const StyledForm = Styled.form`
 display: -webkit-box;
@@ -39,7 +69,7 @@ display: -webkit-box;
   border-radius: 5px;
 }
 
-input[type='submit'] {
+button[type='submit'] {
   display: inline-block;
   border: 0.1rem solid white;
   background-color: #000;
@@ -49,6 +79,8 @@ input[type='submit'] {
   color: white;
   transition: all 0.3s;
   cursor: pointer;
+  font-size: 1.5rem;
+  padding: 12px;
   &:hover{
     color: black;
     background-color: #ffffff;
