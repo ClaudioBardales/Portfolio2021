@@ -82,9 +82,6 @@ p{
   margin: 1rem;
 }
 
-@media (max-width: 425px){
-  width: 80%;
-}
 
 `
 
