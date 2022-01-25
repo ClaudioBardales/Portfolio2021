@@ -5,14 +5,14 @@ import projectImg3 from "../../img/project3.jpg"
 const ProjectCardContent = [
   {
     projectImg: projectImg1,
-    projectTitle: "Seladrab Cleaning Services",
+    projectTitle: "R.F Pavers and Hauling",
     tech1: "HTML",
     tech2: "CSS",
     tech3: "JavaScript",
-    projectLink: "https://brave-austin-bf978e.netlify.app",
-    githubLink: "https://github.com/ClaudioBardales/SeladrabCleaningServices",
+    projectLink: "https://rfpavershauling.com/",
+    githubLink: "https://github.com/ClaudioBardales/ContructionCompany",
     description:
-      "A cleaning website for a small business. I wanted to use the core technologies so I can get more practice on the fundementals.",
+      "A Website for a small construction company. I wanted to use the core technologies so I can get more practice on the fundementals.",
   },
   {
     projectImg: projectImg2,
