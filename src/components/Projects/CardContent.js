@@ -2,6 +2,7 @@ import projectImg1 from "../../img/project1.jpg"
 import projectImg2 from "../../img/project2.jpg"
 import projectImg3 from "../../img/project3.jpg"
 import projectImg4 from "../../img/project4.jpg"
+import projectImg5 from "../../img/project5.jpg"
 
 const ProjectCardContent = [
   {
@@ -12,8 +13,7 @@ const ProjectCardContent = [
     tech3: "JavaScript",
     projectLink: "https://rfpavershauling.com/",
     githubLink: "https://github.com/ClaudioBardales/ContructionCompany",
-    description:
-      "A Website for a small construction company. I wanted to use the core technologies so I can get more practice on the fundementals.",
+    description: "A Website for a small construction company.",
   },
   {
     projectImg: projectImg2,
@@ -23,8 +23,7 @@ const ProjectCardContent = [
     tech3: "JavaScript",
     projectLink: "https://pensive-panini-fa570d.netlify.app",
     githubLink: "https://github.com/ClaudioBardales/CodingChallenge",
-    description:
-      "An Ecommerce Clone of a Pet Supplies Website. This One was my favorite because it challenged me to get better and show that I can make a good clone of any ecommerce website. ",
+    description: "An Ecommerce Clone of a Pet Supplies Website.",
   },
   {
     projectImg: projectImg3,
@@ -35,7 +34,7 @@ const ProjectCardContent = [
     projectLink: "https://focused-montalcini-b667cd.netlify.app",
     githubLink: "https://github.com/ClaudioBardales/Giphy-Clone-React",
     description:
-      "A clone of Giphy. Used this project to showcase my abilities with an API, and learned how to use axios.",
+      "A clone of Giphy made with ReactJS, Styled Components and Axios.",
   },
   {
     projectImg: projectImg4,
@@ -45,8 +44,18 @@ const ProjectCardContent = [
     tech3: "JavaScript",
     projectLink: "https://venerable-brigadeiros-785813.netlify.app/",
     githubLink: "https://github.com/ClaudioBardales/SSproject",
+    description: "A Booking App for Any type of Service.",
+  },
+  {
+    projectImg: projectImg5,
+    projectTitle: "Loop Studio",
+    tech1: "React",
+    tech2: "Styled Components",
+    tech3: "",
+    projectLink: "https://zippy-granita-8d5be6.netlify.app/",
+    githubLink: "https://github.com/ClaudioBardales/LoopStudio",
     description:
-      "A Booking App for Any type of Service. Made with HTML, CSS, JavaScript.",
+      "A Landing Page for VR startup made with ReactJS and Styled Components.",
   },
 ]
 
