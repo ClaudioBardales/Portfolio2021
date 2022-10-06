@@ -48,7 +48,7 @@ const ProjectCardContent = [
   },
   {
     projectImg: projectImg5,
-    projectTitle: "Loop Studio",
+    projectTitle: "Loop Studios",
     tech1: "ReactJS",
     tech2: "Styled Components",
     tech3: "",
