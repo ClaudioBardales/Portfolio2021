@@ -49,7 +49,7 @@ const ProjectCardContent = [
   {
     projectImg: projectImg5,
     projectTitle: "Loop Studio",
-    tech1: "React",
+    tech1: "ReactJS",
     tech2: "Styled Components",
     tech3: "",
     projectLink: "https://zippy-granita-8d5be6.netlify.app/",
